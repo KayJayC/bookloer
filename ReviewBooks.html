@@ -1,19 +1,22 @@
    <!DOCTYPE html>
 <html>
   <head>
-    <title>Review Page</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>W3.CSS Template</title>
+    
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-    body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+    body,h1,h2,h3,h4,h5,h6 {
+      background-color: white;
+      font-family: "Raleway", sans-serif
+    }
     
+  
     .topnav {
   overflow: hidden;
   background-color: #333;
-}
+  }
 
 .topnav a {
   float: left;
@@ -33,15 +36,221 @@
   background-color: #f96995; 
   color: white;
 }
+
+.row {
+  background-color: white; 
+  height: 100px;
+  padding: 20px;
+  justify-content: space-between;
+}
 .button:hover {
   background-color: #f96995;
   color: white;
 }
+.float-container {
+    border: 3px solid #fff;
+    padding: 20px;
+    display: flex;
+    justify-items: center;
+    align-items: stretch;
+}
+
+.float-child {
+    width: 40%;
+    float: left;
+    height: 200px;
+    padding: 20px;
+    background-color: brown;
+}  
+.formCtn{
+  width: 37%;
+  height: 620px;
+  padding: 17.5px;
+  display: block;
+  background-color: #f9fafc;
+  justify-content: space-evenly;
+  margin: auto;
+  overflow: visible;
+  border-radius: 10px;
+  
+}
+.container {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  padding: 5px;
+  display: flex;
+  background-color: white;
+  justify-content: space-between;
+  align-items: start;
+  margin: auto;
+}
+.cardContainer {
+  width: 56%;
+  padding: 0px;
+  height: 620px;
+  background-color:  #f9fafc;
+  display: flex;
+  justify-content: start;
+  margin: auto;
+}
+.boxSpace3 {
+    width: 7%;
+    height: 17px;
+  }
+
+  .boxSpace2 {
+    width: 7%;
+    height: 5px;
+  }
+
+  .boxSpace {
+    width: 7%;
+    height: 10px;
+  }
+
+  input[type=text], select, textarea{
+   width: 100%;
+   padding: 12px;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   box-sizing: border-box;
+   resize: vertical;
+}
+
+/* Style the label to display next to the inputs */
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+/* Style the submit button */
+input[type=submit] {
+  background-color: darkslateblue;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  display: block;
+  height: 45px;
+  justify-content: center;
+  border-radius: 25px;
+  cursor: pointer;
+  float: right;
+}
+
+
+
+/* Floating column for labels: 25% width */
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+/* Floating column for inputs: 75% width */
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.ctn {
+  background-color: white;
+  height: 580px;
+  padding: 20px;
+  border-radius: 2px;
+  overflow-y: auto;
+}
+
+.spec{
+    font-family: "Raleway", sans-serif;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0.45px;
+    color: black;
+  }
+
+  .card{
+    width: 787px;
+    height: 250px;
+    display: flex;
+    background-color: white;
+    justify-content: space-between
+  }
+
+  .min{
+    width: 580px;
+    height: 250px;
+    display: flex;
+    padding-top: 5px;
+    background-color: white;
+    justify-content: space-between
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5%;
+  }
+
+  .boxImg {
+    width: 20%;
+    height: 250px;
+    background-color: transparent;
+    border-radius: 5%;
+  }
+
+  .chip {
+    display: inline-flex;
+    padding: 0 25px;
+    height: 35px;
+    font-size: 14px;
+    font-weight: normal;
+    letter-spacing: 0.4;
+    font-family: "Raleway", sans-serif;
+    line-height: 35px;
+    border-radius: 25px;
+    background-color: #f9fafc;
+    color: black;
+  }
+
+  .chip img {
+    float: left;
+    margin: 0 10px 0 -25px;
+    height: 35px;
+    width:35px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  .pert{
+    font-family: "Raleway", sans-serif;
+    font-size: 14.5px;
+    color: black;
+    display: flex;
+    font-weight: normal;
+    letter-spacing: 0.4px;
+  }
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
     </style>
   </head>
-<body class="w3-light-grey w3-content" style="max-width:2000px">
-
-
+<body class="w3-white w3-content" style="max-width:2000px">
 
 <div class="topnav">
   <a href="https://bookslover.w3spaces.com/HomePage.html">Home</a>
@@ -50,33 +259,129 @@
   <a href="https://bookslover.w3spaces.com/About.html">About</a>
   <a href="https://bookslover.w3spaces.com/Contact.html">Contact</a>
 </div>
-<div class="w3-main" >
 
-  <!-- Header -->
-  <header id="portfolio">
-    <a href="#"><img src="https://www.w3schools.com/w3images/avatar_g2.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
-    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
-    <div class="w3-container">
+<div class = "w3-container w3-white">
     <h1><b>BooksLover</b></h1>
+    <div class = "container">
+      <div class = "cardContainer">
+        <div class="w3-col-padding">
+          <div class="card">
+            <div class = "min">
+              <div class = "w3-col-padding">
+                <div class="chip">
+                  <img src="https://flxt.tmsimg.com/assets/332705_v9_bc.jpg" alt="Person" width="96" height="96">
+                  Becky Jay
+                </div>
+                <div class = "boxSpace2"></div>
+                <div class = "pert">
+                  <b>Reviews The Shining</b>
+                </div>
+                <div class = "boxSpace"></div>
+                <div class = "pert">
+                  An extremely powerful story of a young Southern Negro, from his late high school days through three years of college to his life in Harlem.
+                  His early training prepared him for a life of humility before white men, but through injustices- large and small, he came to realize that he was an "invisible man". People saw in him only a reflection of their preconceived ideas of what he was, denied his individuality, and ultimately did not see him at all."</p>
+                </div>
+              </div>
+            </div>
+            <div class= "boxImg">
+              <img src="https://d3525k1ryd2155.cloudfront.net/h/922/551/872551922.0.x.jpg" alt="Avatar" class="responsive">
+            </div>
+          </div>
+
+
+          <div class = "boxSpace3"></div>
+
+
+          <div class="card">
+            <div class = "min">
+              <div class = "w3-col-padding">
+                <div class="chip">
+                  <img src="https://flxt.tmsimg.com/assets/332705_v9_bc.jpg" alt="Person" width="96" height="96">
+                  Joe Joseph
+                </div>
+                <div class = "boxSpace2"></div>
+                <div class = "pert">
+                  <b>Reviews Under The Door</b>
+                </div>
+                <div class = "boxSpace"></div>
+                <div class = "pert">
+                  An extremely powerful story of a young Southern Negro, from his late high school days through three years of college to his life in Harlem.
+                  His early training prepared him for a life of humility before white men, but through injustices- large and small, he came to realize that he was an "invisible man". People saw in him only a reflection of their preconceived ideas of what he was, denied his individuality, and ultimately did not see him at all."</p>
+                </div>
+              </div>
+            </div>
+            <div class= "boxImg">
+              <img src="https://m.media-amazon.com/images/I/51Nq1EqF4SL.jpg" alt="Avatar" class="responsive">
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+      <div class = "boxSpace3"></div>
+
+
+      <div class = "formCtn">
+        <div class = "ctn">
+          <form action="action_page.php">
+            <div class="spec">
+              Hey, join the conversation
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="fname">Full Name</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="fname" name="fullname" placeholder="Your name...">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="country">Book Title</label>
+              </div>
+              <div class="col-75">
+                <select id="country" name="country">
+                  <option value="australia">The Shining</option>
+                  <option value="canada">Book 2</option>
+                  <option value="usa">Book 3</option>
+                </select>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="subject">Review</label>
+              </div>
+              <div class="col-75">
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:160px"></textarea>
+              </div>
+            </div>
+            
   
+            <div class="row">
+              <input type="submit" value="Submit">
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
-  </header>
+</div>
+
+
   
- 
- 
-  
+
 <script>
-// Script to open and close sidebar
-function w3_open() {
-    document.getElementById("mySidebar").style.display = "block";
-    document.getElementById("myOverlay").style.display = "block";
-}
- 
-function w3_close() {
-    document.getElementById("mySidebar").style.display = "none";
-    document.getElementById("myOverlay").style.display = "none";
-}
-</script>
+    // Script to open and close sidebar
+    function w3_open() {
+        document.getElementById("mySidebar").style.display = "block";
+        document.getElementById("myOverlay").style.display = "block";
+    }
+     
+    function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+        document.getElementById("myOverlay").style.display = "none";
+    }
+    </script>
 
 </body>
 </html>
