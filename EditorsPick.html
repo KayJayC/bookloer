@@ -1,76 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Editor's Pick</title>
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <style>
-    @media screen and (max-width: 600px) {
-    .column {
-      width: 100%;
-    }
-  }
-
-  h1 {
-    font-weight: 500;
-    font-style: normal;
-    font-size: 22px;
-    font-family: nyt-cheltenham,Georgia,Times New Roman,serif;
-    letter-spacing: 0px;
-    color: rgb(0, 31, 45);
-  }
-
-  p {
-    font-style: normal;
-    font-size: 20px;
-    height: 0;
-    font-family:  "Avenir next", Calibri, Verdana, sans-serif;
-    letter-spacing: 0px;
+<html>
+  <head>
+    <title>W3.CSS Template</title>
     
-  }
-
-  .special {
-    font-style: normal;
-    font-size: 17px;
-    height: 0;
-    display: flex;
-    font-family:  "Avenir next", Calibri, Verdana, sans-serif;
-    letter-spacing: 0px;
-  }
-
-
-
-  body {
-    padding: 25px;
-    font-family:nyt-cheltenham,Georgia,Times New Roman,serif;
-    font-size: x-large;
-    color: rgb(0, 31, 45);
-    background-color: whitesmoke;
-
-  }
-
-  .container {
-    width: 100%;
-    height: 270px;
-    align-items: stretch;
-    display: flex;
-    justify-content: start;
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
     
-  }
+    .topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #f96995; 
+  color: white;
+}
+.button:hover {
+  background-color: #f96995;
+  color: white;
+}
+.container {
+  width: 100%;
+  height: 340px;
+  overflow: hidden;
+  display: flex;
+  justify-content: start;
+  margin: auto;
+}
 
   .boxImg {
-    width: 12%;
+    width: 14.3%;
     height: 270px;
     background-color: transparent;
     border-radius: 5%;
   }
 
-  .columnCtn {
-    width: 80%;
-    height: 270px;
-    display: flex;
-    align-items: flex-start;
-    justify-items: start;
-  }
   
   img {
     width: 100%;
@@ -87,7 +68,7 @@
     font-family:  "Avenir next", Calibri, Verdana, sans-serif;
     line-height: 35px;
     border-radius: 25px;
-    background-color: #ececec;
+    background-color: #f9fafc;
     color: black;
   }
   
@@ -100,14 +81,10 @@
     border-radius: 50%;
   }
 
-  .boxSpace {
-    width: 100%;
-    height: 25px;
-  }
 
   .boxSpace2 {
     width: 2%;
-    height: 10px;
+    height: 5px;
   }
 
   .boxSpace3 {
@@ -117,7 +94,17 @@
 
   .boxSpace4 {
     width: 2%;
-    height: 165px;
+    height: 18px;
+  }
+
+  .boxSpace5 {
+    width: 2%;
+    height: 95px;
+  }
+
+  .boxSpace6 {
+    width: 2%;
+    height: 10px;
   }
 
 
@@ -127,10 +114,9 @@
     padding: 0 25px;
     position: relative;
     height: 30px;
-    font-size: 16px;
     line-height: 30px;
     border-radius: 25px;
-    font-family:  "Avenir next", Calibri, Verdana, sans-serif;
+    font-family: "Raleway", sans-serif;
     color: #0B5345;
     background-color: #D0ECE7;
   }
@@ -140,196 +126,271 @@
     max-width: 100%;
   }
 
-  .column2 {
-    float: left;
-    width: 50%;
+  .column{
+    height: 320px;
+    width: 70%;
+    padding: 0px;
+    background: white;
+    text-align: start;
+    justify-content: start;
   }
-  </style>
-</head>
-<body>
 
-<h1>Editor's Pick</h1>
-<p></p>
-
-<div class = "w3-col-padding">
-
-    <div class = "column">
-        <div class="chip">
-            <img src="https://flxt.tmsimg.com/assets/332705_v9_bc.jpg" alt="Person" width="96" height="96">
-            Ekta Sunday
-        </div>
-    
-       
-    
-        <div class = "container">
-            <div class= "boxImg">
-                <img src="https://d3525k1ryd2155.cloudfront.net/h/922/551/872551922.0.x.jpg" alt="Avatar" class="responsive">
-            </div>
-    
-            <div class = "boxSpace2"></div>
-    
-            <div class = "columnCtn">
-                <div class="column">
-                    The Time Machine" by H.G Wells
-                    <div class = "boxSpace3"></div>
-                    <div class = "special">
-                        It is one of the best sci-fi thriller story especially if you love to read science fiction stories. The plot centers on a time machine that can go into the past or the future. In this story, the author ventures into the future and reveals many things that he observed there. He also observed that, after millions of years, there was no longer any life on Earth. If you continue reading, you will be quite interested to learn what will happen next in this tale. This narrative does not have a satisfactory conclusion, but the middle portion of the book is fantastic and full of original ideas.
-                    </div>
-                    <div class = "boxSpace4"></div>
-                    <div class = "row">
-                        <div class = "tag">
-                            Riveting
-                        </div>
-                        <div class = "tag">
-                            Suspense
-                        </div>
-                        <div class = "tag">
-                            Cozy
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-    
-        </div>
-    </div>
-
-    <div class = "boxSpace"></div>
-
-    <div class = "column">
-        <div class="chip">
-            <img src="https://flxt.tmsimg.com/assets/332705_v9_bc.jpg" alt="Person" width="96" height="96">
-            Mari Monday
-        </div>
-    
-       
-    
-        <div class = "container">
-            <div class= "boxImg">
-                <img src="https://m.media-amazon.com/images/I/41Y9+zIxj2L._SL350_.jpg" alt="Avatar" class="responsive">
-            </div>
-    
-            <div class = "boxSpace2"></div>
-    
-            <div class = "columnCtn">
-                <div class="column">
-                    Lord of Scoundrels by Loretta Chase
-                    <div class = "boxSpace3"></div>
-                    <div class = "special">
-                        It is one of the best sci-fi thriller story especially if you love to read science fiction stories. The plot centers on a time machine that can go into the past or the future. In this story, the author ventures into the future and reveals many things that he observed there. He also observed that, after millions of years, there was no longer any life on Earth. If you continue reading, you will be quite interested to learn what will happen next in this tale. This narrative does not have a satisfactory conclusion, but the middle portion of the book is fantastic and full of original ideas.
-                    </div>
-                    <div class = "boxSpace4"></div>
-                    <div class = "row">
-                        <div class = "tag">
-                            Riveting
-                        </div>
-                        <div class = "tag">
-                            Suspense
-                        </div>
-                        <div class = "tag">
-                            Cozy
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-    
-        </div>
-    </div>
-
-    <div class = "boxSpace"></div>
-    <div class = "boxSpace"></div>
-
-    <div class = "column">
-        <div class="chip">
-            <img src="https://flxt.tmsimg.com/assets/332705_v9_bc.jpg" alt="Person" width="96" height="96">
-            Omo Tuesday
-        </div>
-    
-        
-    
-        <div class = "container">
-            <div class= "boxImg">
-                <img src="https://kimewells.files.wordpress.com/2021/02/9781250217349.jpg" alt="Avatar" class="responsive">
-            </div>
-    
-            <div class = "boxSpace2"></div>
-    
-            <div class = "columnCtn">
-                <div class="column">
-                    Under The Whispering Door by TJ Klune
-                    <div class = "boxSpace3"></div>
-                    <div class = "special">
-                        In terms of pacing, the book is mostly a quick and easy read. I found the first half a tiny bit slow and occasionally aimless, but I think the book picks up a lot in the second half and has a much clearer sense of direction, especially heading into the end. It helps a lot that the book is often genuinely funny, which helped me get through the relatively slower parts of the book. I also enjoyed the vibrant cast of characters, and the general vibe of it is that it’s a cute and whimsical story. I appreciate that it’s heart-warming and entertaining. I’m very specifically using the word relatively here, since this is a fairly quick read overall.
-                    </div>
-                    <div class = "boxSpace4"></div>
-                    <div class = "row">
-                        <div class = "tag">
-                            Riveting
-                        </div>
-                        <div class = "tag">
-                            Suspense
-                        </div>
-                        <div class = "tag">
-                            Cozy
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-    
-        </div>
-    </div>
+  .spec{
+    font-family: "Raleway", sans-serif;
+    font-size: x-large;
+    font-weight: bold;
+    letter-spacing: 0.45px;
+  }
+  .pert{
+    font-family: "Raleway", sans-serif;
+    font-size: 16.5px;
+    color: black;
+    display: flex;
+    font-weight: normal;
+  }
+  .specTag{
+    font-family: "Raleway", sans-serif;
+    font-size: 13;
+    font-weight: normal;
+    letter-spacing: normal;
+    display: flex;
+  }
+  .tagCtn{
+    width: auto;
+    height: 45px;
+    overflow: hidden;
+    display: flex;
+    justify-content: start;
+    margin: auto;
+  }
+    </style>
+  </head>
+<body class="w3-white w3-content" style="max-width:2000px">
 
 
-    <div class = "boxSpace"></div>
 
-    <div class = "column">
-        <div class="chip">
-            <img src="https://flxt.tmsimg.com/assets/332705_v9_bc.jpg" alt="Person" width="96" height="96">
-            Zoe Wednesday
-        </div>
-    
-       
-    
-        <div class = "container">
-            <div class= "boxImg">
-                <img src="https://pictures.abebooks.com/isbn/9780765376466-us.jpg" alt="Avatar" class="responsive">
-            </div>
-    
-            <div class = "boxSpace2"></div>
-    
-            <div class = "columnCtn">
-                <div class="column">
-                    A Darker Shade of Magic by V.E. Schwab
-                    <div class = "boxSpace3"></div>
-                    <div class = "special">
-                        A Darker Shade of Magic by V.E. Schwab has a unique and fascinating world and magic system that wraps you up and keeps you waiting with baited breath for what comes next. It's fast-paced with a pair of fun and witty protagonists and a terrifying antagonist. It's absolutely a must-read for fantasy enthusiasts.
-                    </div>
-                    <div class = "boxSpace4"></div>
-                    <div class = "row">
-                        <div class = "tag">
-                            Riveting
-                        </div>
-                        <div class = "tag">
-                            Suspense
-                        </div>
-                        <div class = "tag">
-                            Cozy
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-    
-        </div>
-    </div>
-
-    
-
-
+<div class="topnav">
+  <a href="https://bookslover.w3spaces.com/HomePage.html">Home</a>
+  <a class="active" href="https://bookslover.w3spaces.com/EditorsPick.html">Editor's Pick</a>
+  <a href="https://bookslover.w3spaces.com/ReviewBooks.html">Review Books</a>
+  <a href="https://bookslover.w3spaces.com/About.html">About</a>
+  <a href="https://bookslover.w3spaces.com/Contact.html">Contact</a>
 </div>
 
+
+<div class = "w3-container">
+  <h1><b>BooksLover</b></h1>
+  <div class = "w3-col-padding">
+    <div class = "boxSpace6"></div>
+    <div class = "w3-col-padding">
+      <div class="chip">
+        <img src="https://flxt.tmsimg.com/assets/332705_v9_bc.jpg" alt="Person" width="96" height="96">
+        Ekta Nariya
+      </div>
+      <div class = "boxSpace2"></div>
+      <div class = "container">
+        <div class= "boxImg">
+          <img src="https://d3525k1ryd2155.cloudfront.net/h/922/551/872551922.0.x.jpg" alt="Avatar" class="responsive">
+        </div>
+        <div class = "boxSpace3"></div>
+        <div class = "column">
+          <div class = "spec">
+            The Time Machine by H.G Wells</spec>
+          </div>
+          <div class = "boxSpace4"></div>
+          <div class = "pert">
+            "It is one of the best sci-fi thriller story especially if you love to read science fiction stories. The plot centers on a time machine that can go into the past or the future. In this story, the author ventures into the future and reveals many things that he observed there. He also observed that, after millions of years, there was no longer any life on Earth. If you continue reading, you will be quite interested to learn what will happen next in this tale. This narrative does not have a satisfactory conclusion, but the middle portion of the book is fantastic and full of original ideas".
+          </div>
+          <div class = "boxSpace5"></div>
+          <div class = "tagCtn">
+            <div class = "tag">
+              <div class = "specTag">
+                Riveting
+              </div>
+            </div>
+            <div class = "boxSpace2"></div>
+            <div class = "tag">
+              <div class = "specTag">
+                Suspense
+              </div>
+            </div>
+            <div class = "boxSpace2"></div>
+            <div class = "tag">
+              <div class = "specTag">
+                Detective
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class = "boxSpace3"></div>
+
+    <div class = "w3-col-padding">
+      <div class="chip">
+        <img src="https://flxt.tmsimg.com/assets/332705_v9_bc.jpg" alt="Person" width="96" height="96">
+        Omobolanle Ajibola
+      </div>
+      <div class = "boxSpace2"></div>
+      <div class = "container">
+        <div class= "boxImg">
+          <img src="https://kimewells.files.wordpress.com/2021/02/9781250217349.jpg" alt="Avatar" class="responsive">
+        </div>
+        <div class = "boxSpace3"></div>
+        <div class = "column">
+          <div class = "spec">
+            Under The Whispering Door by TJ Klune
+           </spec>
+          </div>
+          <div class = "boxSpace4"></div>
+          <div class = "pert">
+            In terms of pacing, the book is mostly a quick and easy read. I found the first half a tiny bit slow and occasionally aimless, but I think the book picks up a lot in the second half and has a much clearer sense of direction, especially heading into the end. It helps a lot that the book is often genuinely funny, which helped me get through the relatively slower parts of the book. I also enjoyed the vibrant cast of characters, and the general vibe of it is that it’s a cute and whimsical story. I appreciate that it’s heart-warming and entertaining. I’m very specifically using the word relatively here, since this is a fairly quick read overall.
+          </div>
+          <div class = "boxSpace5"></div>
+          <div class = "tagCtn">
+            <div class = "tag">
+              <div class = "specTag">
+                Riveting
+              </div>
+            </div>
+            <div class = "boxSpace2"></div>
+            <div class = "tag">
+              <div class = "specTag">
+                Suspense
+              </div>
+            </div>
+            <div class = "boxSpace2"></div>
+            <div class = "tag">
+              <div class = "specTag">
+                Detective
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class = "boxSpace3"></div>
+
+    <div class = "w3-col-padding">
+      <div class="chip">
+        <img src="https://flxt.tmsimg.com/assets/332705_v9_bc.jpg" alt="Person" width="96" height="96">
+        Marianna Matousek
+      </div>
+      <div class = "boxSpace2"></div>
+      <div class = "container">
+        <div class= "boxImg">
+          <img src="https://m.media-amazon.com/images/I/41Y9+zIxj2L._SL350_.jpg" alt="Avatar" class="responsive">
+        </div>
+        <div class = "boxSpace3"></div>
+        <div class = "column">
+          <div class = "spec">
+            Lord of Scoundrels by Loretta Chase
+           </spec>
+          </div>
+          <div class = "boxSpace4"></div>
+          <div class = "pert">
+            "It's many people's favorite historical romance and is a classic in the genre. It puts a new spin on well loved tropes. The heroine is particularly interesting and strong and her chemistry with the hero is extremely well done. I've reread it more than 3 times now!".
+          </div>
+          <div class = "boxSpace5"></div>
+          <div class = "tagCtn">
+            <div class = "tag">
+              <div class = "specTag">
+                Riveting
+              </div>
+            </div>
+            <div class = "boxSpace2"></div>
+            <div class = "tag">
+              <div class = "specTag">
+                Suspense
+              </div>
+            </div>
+            <div class = "boxSpace2"></div>
+            <div class = "tag">
+              <div class = "specTag">
+                Detective
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class = "boxSpace3"></div>
+    <div class = "boxSpace3"></div>
+
+    <div class = "w3-col-padding">
+      <div class="chip">
+        <img src="https://flxt.tmsimg.com/assets/332705_v9_bc.jpg" alt="Person" width="96" height="96">
+        Zoe Zellner
+      </div>
+      <div class = "boxSpace2"></div>
+      <div class = "container">
+        <div class= "boxImg">
+          <img src="https://pictures.abebooks.com/isbn/9780765376466-us.jpg" alt="Avatar" class="responsive">
+        </div>
+        <div class = "boxSpace3"></div>
+        <div class = "column">
+          <div class = "spec">
+            A Darker Shade of Magic by V.E. Schwab
+           </spec>
+          </div>
+          <div class = "boxSpace4"></div>
+          <div class = "pert">
+            A Darker Shade of Magic by V.E. Schwab has a unique and fascinating world and magic system that wraps you up and keeps you waiting with baited breath for what comes next. It's fast-paced with a pair of fun and witty protagonists and a terrifying antagonist. It's absolutely a must-read for fantasy enthusiasts.</div>
+          <div class = "boxSpace5"></div>
+          <div class = "tagCtn">
+            <div class = "tag">
+              <div class = "specTag">
+                Riveting
+              </div>
+            </div>
+            <div class = "boxSpace2"></div>
+            <div class = "tag">
+              <div class = "specTag">
+                Suspense
+              </div>
+            </div>
+            <div class = "boxSpace2"></div>
+            <div class = "tag">
+              <div class = "specTag">
+                Detective
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    
+
+
+    
+
+   
+</div>
+</div>
+
+
+  
+
+ 
+
+  
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
 
 </body>
 </html>
