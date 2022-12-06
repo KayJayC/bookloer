@@ -1,18 +1,23 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
   <head>
     <title>W3.CSS Template</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-    body,h1,h2,h3,h4,h5,h6 {
-      background-color: white;
-      font-family: "Raleway", sans-serif
-    }
-    
+    body,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+     h1{
+	color:  black;
+	font: normal 36px 'Open Sans', cursive;
+	margin: 0;
+}
+
+     h1 span{
+	color: #f96995;
+  font: normal 36px 'Open Sans';
+}
   
     .topnav {
   overflow: hidden;
@@ -127,7 +132,7 @@ label {
 
 /* Style the submit button */
 input[type=submit] {
-  background-color: darkslateblue;
+  background-color: black;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -181,7 +186,7 @@ input[type=submit] {
   }
 
   .card{
-    width: 623px;
+    width: 787px;
     height: 250px;
     display: flex;
     background-color: white;
@@ -189,7 +194,7 @@ input[type=submit] {
   }
 
   .min{
-    width: 450px;
+    width: 580px;
     height: 250px;
     display: flex;
     padding-top: 5px;
@@ -203,10 +208,8 @@ input[type=submit] {
   }
 
   .boxImg {
-    
-    align-self: center;
     width: 20%;
-    height: 200px;
+    height: 250px;
     background-color: transparent;
     border-radius: 5%;
   }
@@ -251,6 +254,205 @@ input[type=submit] {
     margin-bottom: 0;
   }
 }
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
+
+* {
+  font-family: "Raleway", sans-serif;
+}
+
+section {
+  width: 100%;
+  display: inline-block;
+  background: #333;
+  height: 50vh;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.footer-distributed{
+	background: #333;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 55px 50px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h1{
+	color:  #ffffff;
+	font: normal 36px 'Open Sans', cursive;
+	margin: 0;
+}
+
+.footer-distributed h1 span{
+	color: #f96995;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+  font-weight:400;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #222;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+  font-weight:400;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  lightseagreen;
+	text-decoration: none;;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "|";
+  font-weight:300;
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+	.footer-distributed{
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+
+}
+
     </style>
   </head>
 <body class="w3-white w3-content" style="max-width:2000px">
@@ -264,7 +466,7 @@ input[type=submit] {
 </div>
 
 <div class = "w3-container w3-white">
-    <h1><b>BooksLover</b></h1>
+    <h1>Books<span>Lover</span></h1>
     <div class = "container">
       <div class = "cardContainer">
         <div class="w3-col-padding">
@@ -272,7 +474,7 @@ input[type=submit] {
             <div class = "min">
               <div class = "w3-col-padding">
                 <div class="chip">
-                  <img src="https://cg2.cgsociety.org/uploads/images/medium/limkuk-vincent-van-gogh-1-5fefd82b-67m9.jpg" alt="Person" width="96" height="96">
+                  <img src="https://flxt.tmsimg.com/assets/332705_v9_bc.jpg" alt="Person" width="96" height="96">
                   Becky Jay
                 </div>
                 <div class = "boxSpace2"></div>
@@ -282,7 +484,7 @@ input[type=submit] {
                 <div class = "boxSpace"></div>
                 <div class = "pert">
                   An extremely powerful story of a young Southern Negro, from his late high school days through three years of college to his life in Harlem.
-                  His early training prepared him for a life of humility before white men, but through injustices- large and small, he came to realize that he was an "invisible man". People saw in him only a reflection of their preconceived ideas of what he was."</p>
+                  His early training prepared him for a life of humility before white men, but through injustices- large and small, he came to realize that he was an "invisible man". People saw in him only a reflection of their preconceived ideas of what he was, denied his individuality, and ultimately did not see him at all."</p>
                 </div>
               </div>
             </div>
@@ -299,7 +501,7 @@ input[type=submit] {
             <div class = "min">
               <div class = "w3-col-padding">
                 <div class="chip">
-                  <img src="https://cg2.cgsociety.org/uploads/images/medium/limkuk-vincent-van-gogh-1-5fefd82b-67m9.jpg" alt="Person" width="96" height="96">
+                  <img src="https://flxt.tmsimg.com/assets/332705_v9_bc.jpg" alt="Person" width="96" height="96">
                   Joe Joseph
                 </div>
                 <div class = "boxSpace2"></div>
@@ -309,7 +511,7 @@ input[type=submit] {
                 <div class = "boxSpace"></div>
                 <div class = "pert">
                   An extremely powerful story of a young Southern Negro, from his late high school days through three years of college to his life in Harlem.
-                  His early training prepared him for a life of humility before white men, but through injustices- large and small."</p>
+                  His early training prepared him for a life of humility before white men, but through injustices- large and small, he came to realize that he was an "invisible man". People saw in him only a reflection of their preconceived ideas of what he was, denied his individuality, and ultimately did not see him at all."</p>
                 </div>
               </div>
             </div>
@@ -370,7 +572,65 @@ input[type=submit] {
     </div>
 </div>
 
+<footer class="footer-distributed">
 
+			<div class="footer-left">
+
+				<h1>Books<span>Lover</span></h1>
+
+				<p class="footer-links">
+					<a href="#" class="link-1">Home</a>
+					
+					<a href="#">Editor's Pick</a>
+				
+					<a href="#">Review Books</a>
+				
+					<a href="#">About</a>
+					
+					<a href="#">Contact</a>
+				</p>
+
+				<p class="footer-company-name">Company Name © 2015</p>
+			</div>
+
+			<div class="footer-center">
+
+				<div>
+					<i class="fa fa-map-marker"></i>
+					<p><span>444 S. Cedros Ave</span> Solana Beach, California</p>
+				</div>
+
+				<div>
+					<i class="fa fa-phone"></i>
+					<p>+1.555.555.5555</p>
+				</div>
+
+				<div>
+					<i class="fa fa-envelope"></i>
+					<p><a href="mailto:support@company.com">support@company.com</a></p>
+				</div>
+
+			</div>
+
+			<div class="footer-right">
+
+				<p class="footer-company-about">
+					<span>About the project</span>
+					This website is solely for educational purposes only. The creators of this websote are Ekta, Kayla, Zoe, Omo and Mariana. Users can leave review on their favourite books and view comments from other users as well.
+				</p>
+
+				<div class="footer-icons">
+
+					<a href="#"><i class="fa fa-facebook"></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
+					<a href="#"><i class="fa fa-linkedin"></i></a>
+					<a href="#"><i class="fa fa-github"></i></a>
+
+				</div>
+
+			</div>
+
+		</footer>
   
 
 <script>
