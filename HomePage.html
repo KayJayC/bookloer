@@ -254,11 +254,11 @@ section {
 
 
 <div class="topnav">
-  <a class="active" href="https://bookslover.w3spaces.com/HomePage.html">Home</a>
-  <a href="https://bookslover.w3spaces.com/EditorsPick.html">Editor's Pick</a>
-  <a href="https://bookslover.w3spaces.com/ReviewBooks.html">Review Books</a>
-  <a href="https://bookslover.w3spaces.com/About.html">About</a>
-  <a href="https://bookslover.w3spaces.com/Contact.html">Contact</a>
+  <a class="active" href="HomePage.html">Home</a>
+  <a href="EditorsPick.html">Editor's Pick</a>
+  <a href="BooksReview.html">Review Books</a>
+  <a href="About.html">About</a>
+  <a href="Contact.html">Contact</a>
 </div>
 <div class="w3-main" >
 
@@ -271,11 +271,11 @@ section {
     <div class="w3-section w3-bottombar w3-padding-16">
       <span class="w3-margin-right">Quick links:</span> 
       <button class="w3-button w3-black">ALL</button>
-      <button class="w3-button w3-white"></i>Horror</button>
-      <button class="w3-button w3-white w3-hide-small"></i>Romance</button>
-      <button class="w3-button w3-white w3-hide-small"></i>Sci-fi</button>
-      <button class="w3-button w3-white w3-hide-small"></i>Fantasy</button>
-      <button class="w3-button w3-white w3-hide-small"></i>Mystery</button>
+      <button onclick="location.href='Romance.php'" class="w3-button w3-white"></i>Horror</button>
+      <button onclick="location.href='Romance.php'" class="w3-button w3-white w3-hide-small"></i>Romance</button>
+      <button onclick="location.href='Sci-fi.php'" class="w3-button w3-white w3-hide-small"></i>Sci-fi</button>
+      <button onclick="location.href='Fantasy.php'" class="w3-button w3-white w3-hide-small"></i>Fantasy</button>
+      <button onclick="location.href='Mystery.php'" class="w3-button w3-white w3-hide-small"></i>Mystery</button>
     </div>
     </div>
   </header>
@@ -283,27 +283,27 @@ section {
   <!-- First Photo Grid-->
   <div class="w3-row-padding">
     <div class="w3-third w3-container w3-margin-bottom">
-      <img src="H.png" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <img src="hic-1horror.png" alt="Norway" style="width:100%" class="w3-hover-opacity">
       <div class="w3-container w3-white">
         <h1><b>Horror</b></h1>
         <p>Horror is a literary, cinematic, and television subgenre that aims to frighten, shock, and even repulse viewers. You can view your favourite books here.</p>
-        <button class="w3-button w3-black">Click here.</button>
+        <button onclick="location.href='Romance.php'" class="w3-button w3-black">Click here.</button>
       </div>
     </div>
     <div class="w3-third w3-container w3-margin-bottom">
-      <img src="R.png" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <img src="hic-2romance.png" alt="Norway" style="width:100%" class="w3-hover-opacity">
       <div class="w3-container w3-white">
         <h1><b>Romance</b></h1>
         <p>The romance genre in literature focuses on the idea of love and relationships of the characters. Check out some interesting picks here!</p>
-        <button class="w3-button w3-black">Click here.</button>
+        <button onclick="location.href='Romance.php'" class="w3-button w3-black">Click here.</button>
       </div>
     </div>
     <div class="w3-third w3-container">
-      <img src="S.png" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <img src="hic-3scifi.png" alt="Norway" style="width:100%" class="w3-hover-opacity">
       <div class="w3-container w3-white">
         <h1><b>Sci-Fi</b></h1>
         <p>Science fiction, sometimes known as sci-fi, is a kind of literature that imaginatively incorporates science and technology into its plot, setting, or topic.</p>
-        <button class="w3-button w3-black">Click here.</button>
+        <button onclick="location.href='Sci-Fi.php'" class="w3-button w3-black">Click here.</button>
       </div>
     </div>
   </div>
@@ -311,34 +311,24 @@ section {
   <!-- Second Photo Grid-->
   <div class="w3-row-padding">
     <div class="w3-third w3-container w3-margin-bottom">
-      <img src="F.png" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <img src="hic-4rename.png" alt="Norway" style="width:100%" class="w3-hover-opacity">
       <div class="w3-container w3-white">
         <h1><b>Fantasy</b></h1>
         <p>The literary genre of fantasy includes magical and supernatural elements that don't exist in reality. Often, the plot involves magic or witchcraft.</p>
-        <button class="w3-button w3-black">Click here.</button>
+        <button onclick="location.href='Fantasy.php'" class="w3-button w3-black">Click here.</button>
       </div>
     </div>
     <div class="w3-third w3-container w3-margin-bottom">
-      <img src="M.png" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <img src="hic-5mystery.png" alt="Norway" style="width:100%" class="w3-hover-opacity">
       <div class="w3-container w3-white">
         <h1><b>Mystery</b></h1>
         <p>The mystery genre is a genre of fiction that follows a crime (like a murder or a disappearance) from the moment it is committed to the moment it is solved.</p>
-        <button class="w3-button w3-black">Click here.</button>
+        <button onclick="location.href='mystery.php'" class="w3-button w3-black">Click here.</button>
       </div>
     </div>
   </div>
 
-  <!-- Pagination -->
-  <div class="w3-center w3-padding-32">
-    <div class="w3-bar">
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
-      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
-    </div>
-  </div>
+  
 
 <footer class="footer-distributed">
 
@@ -347,15 +337,15 @@ section {
 				<h1>Books<span>Lover</span></h1>
 
 				<p class="footer-links">
-					<a href="#" class="link-1">Home</a>
+					<a href="HomePage.html" class="link-1">Home</a>
 					
-					<a href="#">Editor's Pick</a>
+					<a href="EditorsPick.html">Editor's Pick</a>
 				
-					<a href="#">Review Books</a>
+					<a href="BooksReview.html">Review Books</a>
 				
-					<a href="#">About</a>
+					<a href="About.html">About</a>
 					
-					<a href="#">Contact</a>
+					<a href="Contact.html">Contact</a>
 				</p>
 
 				<p class="footer-company-name">Company Name © 2015</p>
