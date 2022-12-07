@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-    body,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+    body,h2,h3,h4,h5,h6 {
+        background-color: white;
+        font-family: "Raleway", sans-serif}
      h1{
 	color:  black;
 	font: normal 36px 'Open Sans', cursive;
@@ -245,27 +247,73 @@ section {
 
 }
 
+.boxSpace{
+    width: 10px;
+    height: 10px;
+}
+
+.spec1{
+    font-family: "Raleway", sans-serif;
+    font-size: 28px;
+    font-weight: 900;
+    letter-spacing: 0.45px;
+    color: black;
+}
+
+.spec2{
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    letter-spacing: 0.45px;
+    color: black;
+}
+
+.container{
+    background-color: #f9fafc;
+    border-radius: 10px;
+    height: 300px;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+}
+
     </style>
   </head>
 <body class="w3-light-grey w3-content" style="max-width:2000px">
 
 
-
 <div class="topnav">
-  <a href="https://bookslover.w3spaces.com/HomePage.html">Home</a>
-  <a href="https://bookslover.w3spaces.com/EditorsPick.html">Editor's Pick</a>
-  <a href="https://bookslover.w3spaces.com/ReviewBooks.html">Review Books</a>
-  <a class="active" href="https://bookslover.w3spaces.com/About.html">About</a>
-  <a href="https://bookslover.w3spaces.com/Contact.html">Contact</a>
-</div>
+	<a href="HomePage.html">Home</a>
+	<a href="EditorsPick.html">Editor's Pick</a>
+	<a href="BooksReview.html">Review Books</a>
+	<a class="active" href="About.html">About</a>
+	<a href="Contact.html">Contact</a>
+  </div>
+
 <div class="w3-main" >
 
   <!-- Header -->
   <header id="portfolio">
     <a href="#"><img src="https://www.w3schools.com/w3images/avatar_g2.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
     <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
-    <div class="w3-container">
+    <div class="w3-container w3-white">
     <h1>Books<span>Lover</span></h1>
+    <div class = "boxSpace"></div>
+    <div class = "boxSpace"></div>
+    <div class = "container">
+        <div class = "w3-col-padding">
+            <div class = "spec1">
+                Who We Are...
+            </div>
+            <div class = "boxSpace"></div>
+            <div class = "spec2">
+                Here at BooksLover, we love our literature, and we want you to love it too. Stories are passageways into other lifetimes and how humans have connected ever since we gained the ability to communicate to one another. We want to introduce you to our favorite books and we want to hear your favorites as well. Here you can read reviews and comments from us, the editors, and from your peers as well. Get to know a book first without risking the time and money it takes to obtain a copy or recommend a favorite to someone new, you might make a new friend and get a good story out of it too.
+            </div>
+        </div>
+    </div>
+    <div class = "boxSpace"></div>
+    <div class = "boxSpace"></div>
+    <div class = "boxSpace"></div>
   
     </div>
   </header>
@@ -278,18 +326,18 @@ section {
 				<h1>Books<span>Lover</span></h1>
 
 				<p class="footer-links">
-					<a href="#" class="link-1">Home</a>
+					<a href="HomePage.html" class="link-1">Home</a>
 					
-					<a href="#">Editor's Pick</a>
+					<a href="EditorsPick.html">Editor's Pick</a>
 				
-					<a href="#">Review Books</a>
+					<a href="BooksReview.html">Review Books</a>
 				
-					<a href="#">About</a>
+					<a href="About.html">About</a>
 					
-					<a href="#">Contact</a>
+					<a href="Contact.html">Contact</a>
 				</p>
 
-				<p class="footer-company-name">Company Name © 2015</p>
+				<p class="footer-company-name">Company Name Â© 2015</p>
 			</div>
 
 			<div class="footer-center">
@@ -346,3 +394,4 @@ function w3_close() {
 
 </body>
 </html>
+
