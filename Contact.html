@@ -250,14 +250,13 @@ section {
 <body class="w3-light-grey w3-content" style="max-width:2000px">
 
 
-
 <div class="topnav">
-  <a href="https://bookslover.w3spaces.com/HomePage.html">Home</a>
-  <a href="https://bookslover.w3spaces.com/EditorsPick.html">Editor's Pick</a>
-  <a href="https://bookslover.w3spaces.com/ReviewBooks.html">Review Books</a>
-  <a href="https://bookslover.w3spaces.com/About.html">About</a>
-  <a class="active" href="https://bookslover.w3spaces.com/Contact.html">Contact</a>
-</div>
+	<a href="HomePage.html">Home</a>
+	<a href="EditorsPick.html">Editor's Pick</a>
+	<a href="BooksReview.html">Review Books</a>
+	<a href="About.html">About</a>
+	<a class="active" href="Contact.html">Contact</a>
+  </div>
 <div class="w3-main" >
 
   <!-- Header -->
@@ -288,7 +287,7 @@ section {
       </div>
     </div>
     <hr class="w3-opacity">
-    <form action="/action_page.php" target="_blank">
+    <form action="thankyou.html" target="_blank">
       <div class="w3-section">
         <label>Name</label>
         <input class="w3-input w3-border" type="text" name="Name" required>
@@ -301,10 +300,15 @@ section {
         <label>Message</label>
         <input class="w3-input w3-border" type="text" name="Message" required>
       </div>
-      <button type="submit" class="w3-button w3-black w3-margin-bottom"><i class="fa fa-paper-plane w3-margin-right"></i>Send Message</button>
+      <button onclick="myFunction()"  type="submit" class="w3-button w3-black w3-margin-bottom"><i class="fa fa-paper-plane w3-margin-right"></i>Send Message</button>
     </form>
   </div>
-
+	<script>
+function myFunction() {
+  confirm("Are you sure you would like to continue?");
+  //window.open("thankyou.html");
+}
+</script>
  <footer class="footer-distributed">
 
 			<div class="footer-left">
@@ -312,15 +316,15 @@ section {
 				<h1>Books<span>Lover</span></h1>
 
 				<p class="footer-links">
-					<a href="#" class="link-1">Home</a>
+					<a href="HomePage.html" class="link-1">Home</a>
 					
-					<a href="#">Editor's Pick</a>
+					<a href="EditorsPick.html">Editor's Pick</a>
 				
-					<a href="#">Review Books</a>
+					<a href="BooksReview.html">Review Books</a>
 				
-					<a href="#">About</a>
+					<a href="About.html">About</a>
 					
-					<a href="#">Contact</a>
+					<a href="Contact.html">Contact</a>
 				</p>
 
 				<p class="footer-company-name">Company Name © 2015</p>
@@ -379,3 +383,5 @@ function w3_close() {
 
 </body>
 </html>
+
+
